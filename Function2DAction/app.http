@@ -1,0 +1,31 @@
+GET http://localhost:7257/api/scores/ranking/get
+
+###
+GET http://localhost:7257/api/scores/ranking/get?stageId=1
+
+###
+POST http://localhost:7257/api/scores/add
+Content-Type: application/json
+{
+  "userName":"H",
+  "stageId":1,
+  "score":8000
+}
+
+###
+GET https://functionappge202409.azurewebsites.net/api/scores/ranking/get
+x-functions-key:YFwhJFJ10Wvq0HMpXD5O9fG1KIh0o9iRPkjeLecgeQwzAzFuTPvD_w==
+
+###
+GET https://functionappge202409.azurewebsites.net/api/scores/ranking/get?stageId=1
+x-functions-key:YFwhJFJ10Wvq0HMpXD5O9fG1KIh0o9iRPkjeLecgeQwzAzFuTPvD_w==
+
+###
+POST https://functionappge202409.azurewebsites.net/api/scores/add
+Content-Type: application/json
+x-functions-key:YFwhJFJ10Wvq0HMpXD5O9fG1KIh0o9iRPkjeLecgeQwzAzFuTPvD_w==
+{
+  "userName":"A",
+  "stageId":1,
+  "score":5000
+}
